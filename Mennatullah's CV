@@ -1,0 +1,147 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% Removed glyphtounicode to avoid potential encoding issues; re-add if needed for specific PDF output
+% \input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Removed \pdfgentounicode=1 to avoid potential errors; re-add if needed for PDF accessibility
+% \pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Mennatullah Khaled Ebrahim} \\ \vspace{1pt}
+    \small Cairo, Egypt \ $|$ \ +20 1033988119 \ $|$ \ 0xmenatullah@gmail.com \\ \vspace{1pt}
+    \href{https://linkedin.com/in/menatullah-khaled}{linkedin.com/in/menatullah-khaled} \ $|$ \ \href{https://github.com/0xmennatullah}{github.com/0xmennatullah}  
+\end{center}
+
+%-----------ABOUT-----------
+\section{About}
+  \resumeSubHeadingListStart
+    \resumeItem{Junior ML Engineer specializing in computer vision, seeking AI/ML/DL internships to apply expertise to innovative solutions. Passionate about advancing AI through collaborative projects.}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {El-Shorouk Academy}{Cairo, Egypt}
+      {Bachelor's Degree in Computer Science, GPA: 3.8/4.0}{Expected Graduation: 2026}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {AI/ML Professional Training}{Information Technology Institute (ITI)}
+      {Aug--Sep 2025}{}
+    \resumeItemListStart
+      \resumeItem{Mastered AI foundations, Python, ML, and deep learning via hands-on labs in Anaconda/Spyder. Earned Kaggle certifications in \href{https://www.kaggle.com/learn/certification/menatullahkhaled/intro-to-deep-learning}{Intro to Deep Learning} and \href{https://www.kaggle.com/learn/certification/menatullahkhaled/computer-vision}{Computer Vision}.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Getting Started with Deep Learning}{\href{https://learn.nvidia.com/certificates?id=P55htmDaTb6a9p5p4cXo3w}{NVIDIA Deep Learning Institute}}
+      {Sep 2025}{}
+    \resumeItemListStart
+      \resumeItem{Completed 7 hands-on labs in PyTorch, including the Presidential Doggy Door project and Sign language Recognition, with data augmentation and quantization.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Deep Learning for Computer Vision (Self-Study)}{\href{https://github.com/0xmennatullah/Deep-learning-for-Computer-vision}{UMICH (EECS 498-007)}}
+      {Jul--Aug 2025}{}
+    \resumeItemListStart
+      \resumeItem{Studied CNNs, object detection (YOLO), segmentation (U-Net), and modern architectures (ResNet, DenseNet, ViT).}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Machine Learning Specialization}{\href{https://coursera.org/share/d5bf28a3223190319c134697a8c753ed}{DeepLearning.AI / Coursera}}
+      {Dec 2024 -- Apr 2025}{}
+    \resumeItemListStart
+      \resumeItem{Learned supervised/unsupervised learning, TensorFlow, and reinforcement learning via 20+ programming assignments in Python, NumPy, and scikit-learn.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {FoodVision Mini (PyTorch ML Pipelines)}{GitHub: \href{https://github.com/0xmennatullah/PyTorch}{Link}}
+      {Self-Study (Daniel Bourke's PyTorch Tutorials)}{2025}
+    \resumeItemListStart
+      \resumeItem{Built an end-to-end computer vision pipeline in PyTorch to classify images of pizza, steak, and sushi using custom datasets, transfer learning (ResNet-50, Vision Transformer), and data augmentation, achieving 85\%+ accuracy.}
+      \resumeItem{Implemented data preprocessing, hyperparameter tuning, and model deployment for real-time food classification, tracked experiments using Weights \& Biases.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Presidential Doggy Door}{NVIDIA Deep Learning Institute}
+      {NVIDIA Labs}{2025}
+    \resumeItemListStart
+      \resumeItem{Trained CNNs (VGG-16, ResNet-50) to distinguish presidential dogs (e.g., Bo Obama) from other animals using transfer learning and data augmentation, achieving 85--90\% accuracy.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Machine Learning Fundamentals}{GitHub: \href{https://github.com/0xmennatullah/ML-Implementation}{Link}}
+      {Coursework \& Self-Study}{2024 -- 2025}
+    \resumeItemListStart
+      \resumeItem{Applied ML techniques (regression, clustering, PCA, model selection) using scikit-learn on datasets like Iris, Wine, Breast Cancer, and House Prices, achieving 90\%+ accuracy.}
+      \resumeItem{Coded classification algorithms (Logistic Regression, K-NN, SVM, Kernel SVM, Naive Bayes, Decision Tree, Random Forest) and clustering (K-Means) from scratch in Python.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Programming}{: Python, C\#, GDScript, Jupyter Notebooks, VS Code} \\
+        \textbf{Data Science}{: NumPy, Pandas, Matplotlib, Seaborn, Data Cleaning, EDA} \\
+        \textbf{Machine Learning}{: scikit-learn, Regression, Classification, Clustering, PCA, LDA, XGBoost, Grid Search, K-fold CV} \\
+        \textbf{Deep Learning}{: TensorFlow, PyTorch, Neural Networks (CNN, RNN, LSTM), Object Detection (YOLO), Segmentation (U-Net)} \\
+        \textbf{Soft Skills}{: Communication , Collaboration, Problem-Solving, Leadership}
+    }}
+\end{itemize}
+
+\end{document}
